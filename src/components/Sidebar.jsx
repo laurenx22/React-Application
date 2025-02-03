@@ -6,8 +6,8 @@ import { useState, useCallback } from "react"
  */
 export default function Sidebar() {
   let [newMenuItem, setNewMenuItem] = useState("")
-  // TODO: 2 Using a state hook, maintain the current menu items as an array state.
-  // let [menuItems, setMenuItems] = useState(initialMenuItems)
+  // TODO: 2 Using a state hook, maintain the current menu items as an array state. -done?
+  let [menuItems, setMenuItems] = useState(initialMenuItems)
   let [filter, setFilter] = useState("")
   // Adds a single string passed in as parameter to the state element
   // "menuItems" that holds the set of current menu items.
@@ -22,7 +22,7 @@ export default function Sidebar() {
   // "term" in them. Each menu item should be an unordered list item wrapped in an unordered list (ul) element.
 
   // TODO: 1 Render inside the outer div an unordered list of the menu items, with each string in the array
-  // its own item.
+  // its own item. - done?
   return (
     <div>
       <ul>
