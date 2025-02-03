@@ -26,7 +26,7 @@ export default function Sidebar() {
   return (
     <div>
       <ul>
-        {initialMenuItems.map((items) => <Sidebar brand={items} />)}
+        {initialMenuItems.map((items, index) => ( <li key={index}>{items} </li> ))}
       </ul>
       <input
         type="text"
