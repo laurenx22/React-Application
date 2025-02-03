@@ -25,6 +25,9 @@ export default function Sidebar() {
   // its own item.
   return (
     <div>
+      <ul>
+        {initialMenuItems.map((items) => <Sidebar brand={items} />)}
+      </ul>
       <input
         type="text"
         id="newMenuItemValue"
