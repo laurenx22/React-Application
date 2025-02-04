@@ -11,11 +11,11 @@ export default function Sidebar() {
   let [filter, setFilter] = useState("")
   // Adds a single string passed in as parameter to the state element
   // "menuItems" that holds the set of current menu items.
-  let addMenuItem = useCallback(() => {
+  let addMenuItem = useCallback(() => { 
     console.log("Added menu item")
     //   // TODO: 3. Add a new menu item to the correct variable associated with this class.
     //   // This involves adding a parameter and changing a class instance variable (props).
-    //   setMenuItems([item, ...menuItems])
+    setMenuItems([item, index, menuItems])
   }, [])
 
   // TODO: 4. Display ONLY the menu items that contain the filter element value
