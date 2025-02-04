@@ -14,8 +14,9 @@ export default function Sidebar() {
   let addMenuItem = useCallback(() => { 
     console.log("Added menu item")
     //   // TODO: 3. Add a new menu item to the correct variable associated with this class.
-    //   // This involves adding a parameter and changing a class instance variable (props).
-    setMenuItems([item, index, menuItems])
+    //   // This involves adding a parameter and changing a class instance variable (props). -done?
+    setMenuItems([item, ...menuItems, newItem])
+    {this.setMenuItems.map((item, index) => ( <li key{index}>{item}</li>
   }, [])
 
   // TODO: 4. Display ONLY the menu items that contain the filter element value
