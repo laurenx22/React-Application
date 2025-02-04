@@ -16,11 +16,16 @@ export default function Sidebar() {
     //   // TODO: 3. Add a new menu item to the correct variable associated with this class.
     //   // This involves adding a parameter and changing a class instance variable (props). -done?
     setMenuItems([item, ...menuItems, newItem])
-    {this.setMenuItems.map((item, index) => ( <li key{index}>{item}</li>
+    {this.setMenuItems.map((item, index) => ( <li key{index}>{item}</li>))}
   }, [])
 
   // TODO: 4. Display ONLY the menu items that contain the filter element value
-  // "term" in them. Each menu item should be an unordered list item wrapped in an unordered list (ul) element.
+  // "term" in them. Each menu item should be an unordered list item wrapped in an unordered list (ul) element. -done?
+      let filterChange = (x) => { filterItem(x.target.value) }
+      let filterItems = menuItems.filter(item => item.toLowerCase().includes(filterItems.toLowerCase()))
+      <ul>
+        {filterItems.map((item, index) => ( <li key={index}>{item}</li>))}
+      </ul>
 
   // TODO: 1 Render inside the outer div an unordered list of the menu items, with each string in the array
   // its own item. - done?
